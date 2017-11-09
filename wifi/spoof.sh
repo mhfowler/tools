@@ -1,11 +1,11 @@
 # get your mac address
-ifconfig en1 | grep ether
+ifconfig en0 | grep ether
 
 # spoof your mac address
-sudo ifconfig en1 ether 00:e2:e3:e4:e5:e6
+sudo ifconfig en0 ether 00:e2:e3:e4:e5:e6
 
 # wifi down
-sudo ifconfig en1 down
+sudo ifconfig en0 down
 
 # wifi up
-sudo ifconfig en1 up
+sudo ifconfig en0 up
